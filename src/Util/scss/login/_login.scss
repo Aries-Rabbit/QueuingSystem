@@ -1,0 +1,84 @@
+// Start login
+.login {
+    height: 100%;
+    border-radius: 16px;
+
+    //Start login__left 
+    .login__left {
+        background-color: #f6f6f6;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
+
+        .login__left-logo {
+            flex: 1;
+
+            .login__left-img {
+                width: 170px;
+                height: 136px;
+                margin-top: 82px;
+                margin-bottom: 98px;
+            }
+        }
+
+        .login__left-form {
+            flex: 2;
+
+            .ant-col-16 {
+                max-width: 100% !important;
+            }
+
+            .login__left-input {
+                width: 400px;
+                padding: 10px 12px;
+                border-radius: 8px;
+            }
+
+            .ant-btn.login__left-btn {
+                padding: 10px 24px !important;
+                height: 40px !important;
+                width: 162px !important;
+            }
+        }
+    }
+    //End login__left
+
+
+    //Start login__right
+    .login__right {
+        position: relative;
+        background-color: #fff;
+        height: 100%;
+
+        .login__right-img {
+            width: 605px;
+            height: 614.06px;
+            margin: 112px 33px 83px 79px;
+        }
+
+        .login__right-title {
+            color: $primary-color-txt;
+            position: absolute;
+            bottom: 40%;
+            right: 33px;
+            width: auto;
+            height: auto;
+
+            p {
+                font-size: 2rem;
+                margin-bottom: 0;
+            }
+
+            h1 {
+                font-weight: 900;
+                color: $primary-color-txt;
+                font-size: 2.2rem;
+            }
+        }
+    }
+    //End login__right
+}
+
+// End login

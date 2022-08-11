@@ -1,0 +1,615 @@
+// Start capSp
+.capSo {
+    padding: 30px 97px 30px 24px;
+    position: relative;
+
+    // Start capSo__breadcrumb 
+    .capSo__breadcrumb {
+        margin-bottom: 45px;
+
+        // Start ant-breadcrumb
+        .ant-breadcrumb {
+                
+            ol {
+                align-items: center;
+                
+                li {
+
+                    span {
+                        font-size: 20px !important;
+                        color: #7E7D88;
+                        font-weight: 700 !important;
+        
+                        a {
+                            font-size: 20px !important;
+                            color: #7E7D88;
+                        }
+                    }
+    
+                    &:last-child {
+    
+                        span {
+                            color: $primary-color-txt !important;
+                        }
+                            
+                    }
+                }
+    
+                .ant-breadcrumb-separator {
+                    margin: 0 15.4px !important;
+                }
+            }
+        }
+        //End ant-breadcrumb 
+
+    }
+    // End capSo__breadcrumb
+
+    // Start capSo__content
+    .capSo__content {
+
+        // Start capSo__content-heading
+        .capSo__content-heading {
+            font-size: 24px;
+            color: $primary-color-txt;
+            font-weight: 700;
+            line-height: 36px;
+            margin-bottom: 16px;
+        }
+        // End capSo__content-heading
+
+        // Start capSo__content-menu
+        .capSo__content-menu {
+            display: flex;
+            justify-content: space-between;
+            width: 1112px;
+
+            // Start capSo__content-list 
+            .capSo__content-list {
+                display: flex;
+
+                // Start capSo__content-item
+                .capSo__content-item {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 24px;
+
+                    span {
+                        margin-bottom: 4px;
+                        line-height: 24px;
+                        font-weight: 700;
+                    }
+
+                    //Start capSo__content-select
+                    .capSo__content-select {
+                        width: 300px;
+                        height: 44px !important;
+
+                        .ant-select-selector {
+                            height: 100%;
+                            padding: 10px 12px;
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+
+                        &.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                            border-color: $primary-color-txt !important;
+                        }
+
+                        // &.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                        //     border-color: $primary-color-txt !important;
+                        // }
+
+                    }
+                    //End capSo__content-select
+
+                    // Start ant-input-affix-wrapper
+                    .ant-input-affix-wrapper {
+                        padding: 10px 12px;
+                        border-radius: 8px;
+                        width: 300px;
+                        height: 44px !important;
+                        margin-bottom: 0px !important;
+
+                        .ant-input {
+                            font-size: 16px;
+                        }
+
+                        &:not(.ant-input-affix-wrapper-disable):hover {
+                            border-color: $primary-color-txt !important;
+                        }
+
+                    }
+
+                    .ant-input-affix-wrapper-focused {
+                        border-color: $primary-color-txt !important;
+                    }
+                    // End ant-input-affix-wrapper
+
+                    // Start ant-picker-range
+                    .ant-picker-range {
+                        width: 320px;
+                        height: 44px;
+                        border-radius: 8px;
+
+                        &.ant-picker {
+                            background-color: transparent;
+                            border: none;
+                        }
+
+                        &.ant-picker-focused {
+                            border-color: transparent !important;
+                            box-shadow: none !important;
+                        }
+
+                        .ant-picker-input {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: row-reverse;
+                            height: 44px;
+                            width: 150px;
+                            background-color: #fff;
+                            border-radius: 8px;
+                            border: 1px solid #D4D4D7;
+
+                            input {
+                                text-align: center;
+                                color: #A9A9B0;
+                            }
+                        }
+
+                        .ant-picker-active-bar {
+                            background-color: transparent !important;
+                        }
+                    }
+                    // End ant-picker-range
+
+                    .ant-picker {
+                        width: 146px;
+                        height: 44px;
+                        border-radius: 8px;
+
+                        .ant-picker-input {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: row-reverse;
+
+                            input {
+                                text-align: center;
+                            }
+                        }
+
+                        &.ant-picker-focused {
+                            border-color: $primary-color-btn;
+                        }
+
+                        &:hover {
+                            border-color: $primary-color-btn;
+                        }
+                    }
+
+                    .ant-picker-img {
+                        margin: 0 8px;
+                    }
+                }
+                // End capSo__content-item
+
+                &.capSo__content-search {
+
+                    .capSo__content-item {
+                        margin-right: 0;
+                    }
+                }
+            }
+            // End capSo__content-list 
+
+            &.detail {
+
+                .capSo__content-item {
+                    margin-right: 12px;
+
+                    .ant-picker {
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+        // End capSo__content-menu
+
+        // Start capSo__content-table 
+        .capSo__content-table {
+            width: 1112px;
+            margin-top: 16px;
+
+            // Start ant-table-wrapper
+            .ant-table-wrapper {
+
+                //Start ant-table
+                .ant-table {
+                    border-radius: 12px;
+                    box-shadow: $box-shadow;
+                    overflow: hidden;
+
+                    // Start ant-table-content
+                    .ant-table-content {
+
+                        .ant-table-thead {
+
+                            .ant-table-cell {
+                                background-color: $primary-color-btn;
+                                color: #fff;
+                                font-size: 16px !important;
+                                font-weight: 700;
+                            }
+                        }
+
+                        tr {
+                            height: 49px !important;
+
+                            .ant-table-cell {
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                width: auto;
+                                font-size: 14px !important;
+                                height: 49px !important;
+                                padding: 3.5px 17px !important;
+                                max-width: 268px;
+                                
+                                .ant-table-cell-content {
+                                    max-width: 200px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    margin-bottom: 0;
+                                    font-size: 14px !important;
+                                    line-height: 21px;
+                                }
+
+                                .ant-table-cell-more {
+                                    height: 21px;
+                                    position: relative;
+
+                                    .more {
+                                        background-color: transparent;
+                                        outline: none;
+                                        border: none;
+                                        font-size: 14px !important;
+                                        text-decoration: underline;
+                                        color: #4277FF;
+                                        &:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        &:focus + .ant-table-cell-capSo {
+                                            display: block;
+                                        }
+                                    }
+
+                                    .ant-table-cell-capSo {
+                                        position: absolute;
+                                        bottom: -4px;
+                                        left: -3px;
+                                        width: 394px;
+                                        height: 50px;
+                                        padding: 3px 5px;
+                                        border: 1px solid #FFC89B;
+                                        border-radius: 8px;
+                                        position: absolute;
+                                        background-color: #fff;
+                                        z-index: 199 !important;
+                                        display: none;
+                                        cursor: pointer;
+
+                                        p {
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                            max-width: 380px;
+                                            white-space: normal !important;
+                                        }
+                                    }
+                                }
+
+                                button {
+                                    background-color: transparent;
+                                    outline: none;
+                                    border: none;
+                                    font-size: 14px !important;
+                                    text-decoration: underline;
+                                    color: #4277FF;
+                                }
+                            }
+
+                            &:nth-child(even) {
+                                background-color: $primary-color-btn-hover !important;
+                            }
+                        }
+                    }
+                    // End ant-table-content
+                }
+                //End ant-table
+
+                // Start ant-pagination
+                .ant-pagination {
+
+                    .ant-pagination-item {
+                        width: 32px !important;
+                        height: 32px !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 4px;
+
+                        a {
+
+                            &.hover {
+                                color: #000;
+                            }
+                        }
+                    }
+
+                    .ant-pagination-item-active {
+                        background-color: $primary-color-txt;
+                        color: #fff;
+                        border-color: transparent !important;
+
+                        &:hover a {
+                            color: #fff !important;
+                        }
+                    }
+                }
+                // End ant-pagination
+            }
+            // End ant-table-wrapper
+        }
+        // End capSo__content-table
+
+        // Start capSo__content=about
+        .capSo__content-about {
+            width: 1112px;
+            height: 604px;
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: $box-shadow;
+            padding: 16px 24px;
+
+            // Start content__about-heading
+            .content__about-heading {
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 30px;
+                color: $primary-color-txt;
+                margin-bottom: 20px;
+            }
+            // End content__about-heading
+
+            // Start content__about-list 
+            .content__about-list {
+                display: flex;
+                justify-content: space-between;
+
+                // Start content__about-item
+                .content__about-item {
+                    flex: 1;
+
+                    // Start about__info-list
+                    .about__info-list {
+                        display: flex;
+                        flex-direction: column;
+
+                        // Start about__info-item
+                        .about__info-item {
+                            margin-bottom: 16px;
+                            display: flex;
+                            align-items: center;
+                            
+                            p {
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: #282739;
+                                flex: 0.5;
+                                margin-bottom: 0;
+                            }
+
+                            span {
+                                color: #535261;
+                                font-weight: 400;
+                                line-height: 24px;
+                                flex: 1.5;
+                            }
+                        }
+                        // End about__info-item
+                    }
+                    // End about__info-list
+                }
+                // Start content__about-item
+            }
+            // End content__about-list
+        }
+        // End capSo__content-about
+
+        // Start capSo__content-container
+        .capSo__content-container {
+            width: 1192px;
+            height: 604px;
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: $box-shadow;
+            padding: 24px 54px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            // Start content__container-heading
+            .content__container-heading {
+                font-size: 32px;
+                font-weight: 700;
+                color: $primary-color-txt;
+                line-height: 48px;
+                text-transform: uppercase;
+            }
+            // End content__container-heading
+            
+            // Start content__container-form-top
+            .content__container-form-top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .form__top-title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #535261;
+                    line-height: 30px;
+                    margin-bottom: 12px;
+                }
+
+                // Start form__top-select 
+                .form__top-select {
+                    
+                    .ant-select-selector {
+                        height: 44px;
+                        border-radius: 8px;
+                        border-width: 2px;
+
+                        .ant-select-selection-placeholder {
+                            line-height: 44px;
+                        }
+
+                        .ant-select-selection-item {
+                            line-height: 44px;
+                        }
+                    }
+
+                    &.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) {
+
+                        .ant-select-selector {
+                            border-color: $primary-color-txt;
+                        }
+                    }
+
+                    &:not(.ant-select-disabled):hover {
+                        
+                        .ant-select-selector {
+                            border-color: $primary-color-txt;
+                        }
+                    }
+                }
+                // End form__top-select
+            }
+            // End content__container-form-top
+
+            // Start content__container-form-bottom
+            .content__container-form-bottom {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 80px;
+
+                button {
+                    width: 115px;
+                    height: 48px;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    transition: all 0.5s;
+                    outline: none;
+                }
+
+                .form__bottom-btn-cancel {
+                    margin-right: 32px;
+                    border: 1px solid #FF9138;
+                    background-color: #FFF2E7;
+                    color: #FF9138;
+                    
+                    &:hover {
+                        border: 1px solid #FFF2E7;
+                        background-color: #FF9138;
+                        color: #FFF2E7;  
+                        box-shadow: rgba(244, 128, 34, 0.5) 0px 0px 20px;  
+                    }
+                }
+
+                .form__bottom-btn-print {
+                    border: 1px solid #fff;
+                    background-color: #FF9138;
+                    color: #fff;
+
+                    &:hover {
+                        border: 1px solid #FF9138;
+                        background-color: #FFF2E7;
+                        color: #FF9138;  
+                        box-shadow: rgba(244, 128, 34, 0.5) 0px 0px 20px;    
+
+                    }
+                }
+            }
+            // End content__container-form-bottom
+        }
+        // End capSo__content-container
+    }
+    // End capSo__content
+
+    // Start capSo__addcapSo 
+    .capSo__addcapSo {
+        position: absolute;
+        right: 0;
+        top: 247px;
+        width: 80px;
+        height: 94px;
+        background-color: #fff2e7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: $box-shadow;
+        cursor: pointer;
+        padding: 10px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+    
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            color: $primary-color-txt;
+            line-height: 19.1px;
+            text-align: center;
+            margin-top: 6.33px;
+            width: 69px;
+            white-space: normal;
+        }
+    }
+    // End capSo__addcapSo
+
+    // Start capSo__return
+    .capSo__return {
+        position: absolute;
+        top: 164px;
+        right: 0;
+        background-color: #FFF2E7;
+        width: 80px;
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $box-shadow;
+        cursor: pointer;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            color: $primary-color-txt;
+            line-height: 19.1px;
+            text-align: center;
+            margin-top: 6.33px;
+        }
+    } 
+    // End capSo__return
+}
+// End capSo
+
+

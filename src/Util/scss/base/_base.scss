@@ -1,0 +1,212 @@
+//Start layout 
+.layout {
+    width: 1440px;
+    height: 810px;
+    border-radius: 16px;
+    background-color: #000 !important;
+    overflow: hidden;
+}
+//End layout
+
+//Start row 
+.row {
+    margin: 0 0 !important;
+}
+//End row
+
+// Start ant-pagination 
+.ant-pagination  {
+    align-items: center;
+
+    .ant-pagination-prev, .ant-pagination-next {
+        transform: translateY(-3px);
+    }
+}
+// End ant-pagination 
+
+// Start ant-checkbox
+.ant-checkbox {
+
+    .ant-checkbox-inner {
+        border: 2px solid #4277FF;
+        border-radius: 4px;
+        width: 20px;
+        height: 20px;
+
+
+        .ant-checkbox-inner::after {
+            border: 3px solid #fff;
+        }
+    }
+
+    &.ant-checkbox-checked {
+        
+        .ant-checkbox-inner {
+            background-color: #4277FF;
+        }
+    }
+}
+// End ant-checkbox
+
+// Start ant-select-dropdown scroll
+.ant-select-dropdown {
+    overflow-y: overlay !important;
+    overflow-x: hidden !important;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        border-radius: 43px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #FFC89B;
+    }
+
+    // .rc-virtual-list-holder {
+    //     height: 100% !important;
+    // }
+
+    .rc-virtual-list-scrollbar-thumb {
+        display: none !important;
+    }
+}
+// End ant-select-dropdown scroll
+
+
+// Start ant-modal-wrap
+.ant-modal-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // Start ant-modal
+    .ant-modal {
+        position: relative;
+        top: 0;
+
+        .ant-modal-content {
+            border-radius: 24px;
+            overflow: hidden;
+
+            .ant-modal-footer {
+                display: none;
+            }
+        }
+
+        &.modal__capSo {
+
+            .ant-modal-header {
+                height: calc(385px - 110px);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .ant-modal-title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h3 {
+                        font-size: 32px;
+                        font-weight: 700;
+                        color: #535261;
+                        line-height: 48px;
+                        margin-bottom: 0;
+                    }
+    
+                    .modal__capSo-number {
+                        font-size: 56px;
+                        line-height: 60px;
+                        font-weight: 800;
+                        color: $primary-color-txt;
+                        margin: 24px 0;
+                    }
+    
+                    .modal__capSo-info {
+                        font-size: 18px;
+                        line-height: 27px;
+                        font-weight: 400;
+    
+                        span {  
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .ant-modal-body {
+                background-color: $primary-color-btn;
+                color: #fff;
+                padding: 9px;
+
+                p {
+                    text-align: center;
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 33px;
+                }
+            }
+
+            .ant-modal-content {
+                width: 469px;
+                height: 385px;
+
+                .ant-modal-close {
+                    outline: none;
+                }
+
+                .ant-modal-close-x {
+                    outline: none;
+
+                    .ant-modal-close-icon {
+                        color: $primary-color-btn;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    // End ant-modal
+}
+// End ant-modal-wrap
+
+
+// Start ant-dropdown
+.ant-dropdown {
+
+    // Start ant-table-filter-dropdown
+    .ant-table-filter-dropdown {
+        min-width: 196px;
+        transform: translateX(11px);
+
+        // Start ant-dropdown-menu-item
+        .ant-dropdown-menu-item {
+
+            .ant-dropdown-menu-title-content {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+            }
+
+            .ant-checkbox-wrapper + span {
+                padding-left: 0;
+            }
+
+            &.ant-dropdown-menu-item-selected {
+                background-color: #fff !important;
+                color: #000 !important;
+            }
+        }
+        // End ant-dropdown-menu-item
+    }
+    // End ant-table-filter-dropdown
+}
+// End ant-dropdown
+

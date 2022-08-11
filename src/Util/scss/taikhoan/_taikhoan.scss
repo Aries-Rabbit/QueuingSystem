@@ -1,0 +1,532 @@
+// Start taiKhoan
+.taiKhoan {
+    padding: 30px 97px 30px 24px;
+    position: relative;
+
+    // Start taiKhoan__breadcrumb 
+    .taiKhoan__breadcrumb {
+        margin-bottom: 45px;
+    
+        // Start ant-breadcrumb
+        .ant-breadcrumb {
+                
+            ol {
+                align-items: center;
+                
+                li {
+
+                    span {
+                        font-size: 20px !important;
+                        color: #7E7D88;
+                        font-weight: 700 !important;
+        
+                        a {
+                            font-size: 20px !important;
+                            color: #7E7D88;
+                        }
+                    }
+    
+                    &:last-child {
+    
+                        span {
+                            color: $primary-color-txt !important;
+                        }
+                            
+                    }
+                }
+    
+                .ant-breadcrumb-separator {
+                    margin: 0 15.4px !important;
+                }
+            }
+        }
+        //End ant-breadcrumb 
+    }
+    // End taiKhoan__breadcrumb
+
+    // Start taiKhoan__content
+    .taiKhoan__content {
+
+        // Start taiKhoan__content-heading
+        .taiKhoan__content-heading {
+            font-size: 24px;
+            color: $primary-color-txt;
+            font-weight: 700;
+            line-height: 36px;
+            margin-bottom: 16px;
+        }
+        // End taiKhoan__content-heading
+
+        // Start taiKhoan__content-menu
+        .taiKhoan__content-menu {
+            display: flex;
+            justify-content: space-between;
+            width: 1112px;
+
+            // Start taiKhoan__content-list 
+            .taiKhoan__content-list {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                // Start taiKhoan__content-item
+                .taiKhoan__content-item {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 24px;
+
+                    span {
+                        margin-bottom: 4px;
+                        line-height: 24px;
+                        font-weight: 700;
+                    }
+
+                    //Start taiKhoan__content-select
+                    .taiKhoan__content-select {
+                        height: 44px !important;
+
+                        .ant-select-selector {
+                            height: 100%;
+                            padding: 10px 12px;
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+
+                        &.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                            border-color: $primary-color-txt !important;
+                        }
+
+                        // &.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                        //     border-color: $primary-color-txt !important;
+                        // }
+                    }
+                    //End taiKhoan__content-select
+
+                    // Start ant-input-affix-wrapper
+                    .ant-input-affix-wrapper {
+                        padding: 10px 12px;
+                        border-radius: 8px;
+                        width: 300px !important;
+                        height: 44px !important;
+                        margin-bottom: 0px !important;
+
+                        .ant-input {
+                            font-size: 16px;
+
+                            // &:hover {
+                            //     border-color: $primary-color-txt !important;
+                            // }
+
+                            // &:focus {
+                            //     border-color: $primary-color-txt !important;
+                            // }
+                        }
+
+                        &:not(.ant-input-affix-wrapper-disable):hover {
+                            border-color: $primary-color-txt !important;
+                        }
+
+                    }
+
+                    .ant-input-affix-wrapper-focused {
+                        border-color: $primary-color-txt !important;
+                    }
+                    // End ant-input-affix-wrapper
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                }
+                // End taiKhoan__content-item
+
+                &.taiKhoan__content-search {
+
+                    .taiKhoan__content-item {
+                        margin-right: 0;
+                    }
+                }
+            }
+            // End taiKhoan__content-list 
+        }
+        // End taiKhoan__content-menu
+
+         // Start taiKhoan__content-table 
+         .taiKhoan__content-table {
+            width: 1112px;
+            margin-top: 15px;
+
+            // Start ant-table-wrapper
+            .ant-table-wrapper {
+
+                //Start ant-table
+                .ant-table {
+                    border-radius: 12px;
+                    box-shadow: $box-shadow;
+                    overflow: hidden;
+
+                    // Start ant-table-content
+                    .ant-table-content {
+
+                        .ant-table-thead {
+
+                            .ant-table-cell {
+                                background-color: $primary-color-btn;
+                                color: #fff;
+                                font-size: 16px !important;
+                                font-weight: 700;
+                            }
+                        }
+
+                        tr {
+                            height: 49px !important;
+
+                            .ant-table-cell {
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                width: auto;
+                                font-size: 14px !important;
+                                height: 49px !important;
+                                padding: 3.5px 17px !important;
+                                max-width: 268px;
+                                
+                                .ant-table-cell-content {
+                                    max-width: 200px;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    margin-bottom: 0;
+                                    font-size: 14px !important;
+                                    line-height: 21px;
+                                }
+
+                                .ant-table-cell-more {
+                                    height: 21px;
+                                    position: relative;
+
+                                    .more {
+                                        background-color: transparent;
+                                        outline: none;
+                                        border: none;
+                                        font-size: 14px !important;
+                                        text-decoration: underline;
+                                        color: #4277FF;
+                                        &:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        &:focus + .ant-table-cell-taiKhoan {
+                                            display: block;
+                                        }
+                                    }
+
+                                    .ant-table-cell-taiKhoan {
+                                        position: absolute;
+                                        bottom: -4px;
+                                        left: -3px;
+                                        width: 394px;
+                                        height: 50px;
+                                        padding: 3px 5px;
+                                        border: 1px solid #FFC89B;
+                                        border-radius: 8px;
+                                        position: absolute;
+                                        background-color: #fff;
+                                        z-index: 199 !important;
+                                        display: none;
+                                        cursor: pointer;
+
+                                        p {
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                            max-width: 380px;
+                                            white-space: normal !important;
+                                        }
+                                    }
+                                }
+
+                                button {
+                                    background-color: transparent;
+                                    outline: none;
+                                    border: none;
+                                    font-size: 14px !important;
+                                    text-decoration: underline;
+                                    color: #4277FF;
+                                }
+                            }
+
+                            &:nth-child(even) {
+                                background-color: $primary-color-btn-hover !important;
+                            }
+                        }
+                    }
+                    // End ant-table-content
+                }
+                //End ant-table
+
+                // Start ant-pagination
+                .ant-pagination {
+
+                    .ant-pagination-item {
+                        width: 32px !important;
+                        height: 32px !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 4px;
+
+                        a {
+
+                            &.hover {
+                                color: #000;
+                            }
+                        }
+                    }
+
+                    .ant-pagination-item-active {
+                        background-color: $primary-color-txt;
+                        color: #fff;
+                        border-color: transparent !important;
+
+                        &:hover a {
+                            color: #fff !important;
+                        }
+                    }
+                }
+                // End ant-pagination
+            }
+            // End ant-table-wrapper
+        }
+        // End taiKhoan__content-table 
+
+        // Start taiKhoan__content-update
+        .taiKhoan__content-update {
+
+            // Start content__update-top 
+            .content__update-top {
+                width: 1152px;
+                height: 556px;
+                border-radius: 12px;
+                background-color: #fff;
+                padding: 16px 24px;
+                box-shadow: $box-shadow;
+
+                // Start content__update-heading
+                .content__update-heading {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: $primary-color-txt;
+                    margin-bottom: 15px;
+                }
+                // End content__update-heading
+
+                // Start content__update-list
+                .content__update-list {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 24px;
+
+                    // Start content__update-item
+                    .content__update-item {
+                        width: 540px;
+
+                        // Start content__update-label
+                        .content__update-label {
+                            margin-bottom: 8px;
+                            display: flex;
+                            align-items: center;
+
+                            span {
+                                color: #282739;
+                                font-weight: 600;
+                                margin-right: 3px;
+                            }
+                        }
+                        // End content__update-label
+
+                        // Start content__update-input
+                        .content__update-input {
+                            width: 540px;
+                            height: 44px;
+                            padding: 10px 12px;
+                            border: 1px solid #D4D4D7;
+                            border-radius: 8px;
+
+                            &:focus {
+                                outline-color: #FFAC6A !important;
+                            }
+                        }
+                        // End content__update-input
+
+                        // Start ant-select
+                        .ant-select {
+
+                            .ant-select-selector {
+                                padding: 7px 16px;
+                                height: 80px;
+                                align-items: start;
+                                border-radius: 8px;
+                                border-color: $primary-color-btn;
+
+                                .ant-select-selection-overflow-item {
+
+                                    .ant-select-selection-item {
+                                        height: 28px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        background-color: #FFAC6A;
+                                        color: white;
+                                        border-radius: 9px;
+                                        box-shadow: $box-shadow;
+                                        padding: 4.5px 13px;
+
+                                        .ant-select-selection-item-content {
+                                            font-size: 14px;
+                                        }
+
+                                        .anticon-close {
+                                        
+                                            svg {
+                                                color: white;
+                                                transform: translateY(-2px);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                                border-color: $primary-color-txt !important;
+                            }
+
+                            &.content__update-item-select {
+                                width: 540px !important;
+                                
+                                .ant-select-selector {
+                                    height: 44px !important;
+                                    border-color: #D4D4D7;
+                                }
+                            }
+                        }
+
+                        // End ant-select
+                        .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+                            border: 2.5px solid $primary-color-txt !important;
+                        }
+
+                        .ant-input-affix-wrapper:hover {
+                            border: 2.5px solid $primary-color-txt !important;
+                        }
+
+                        .ant-input-affix-wrapper-focused {
+                            border: 2.5px solid $primary-color-txt !important;
+                        }
+
+                        .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused {
+                            border: 2.5px solid $primary-color-txt !important;
+                        }
+                    }
+                    // End content__update-item
+                }
+                // End content__update-list
+
+                // Start content__update-warning
+                .content__update-warning {
+                    margin-top: 14px;
+
+                    img {
+                        margin-right: 3px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: #7E7D88;
+                    }
+                }
+                // End content__update-warning
+            }
+            // End content__update-top
+
+            // Start content__update-bottom 
+            .content__update-bottom {
+                display: flex;
+                justify-content: center;
+                margin-top: 24px;
+
+                button {
+                    width: 115px;
+                    height: 48px;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    transition: all 0.5s;
+                }
+
+                .content__update-btn-cancel {
+                    margin-right: 32px;
+                    border: 1px solid #FF9138;
+                    background-color: #FFF2E7;
+                    color: #FF9138;
+                    
+                    &:hover {
+                        border: 1px solid #FFF2E7;
+                        background-color: #FF9138;
+                        color: #FFF2E7;  
+                        box-shadow: rgba(244, 128, 34, 0.5) 0px 0px 20px;  
+                    }
+                }
+
+                .content__update-btn-update {
+                    border: 1px solid #fff;
+                    background-color: #FF9138;
+                    color: #fff;
+
+                    &:hover {
+                        border: 1px solid #FF9138;
+                        background-color: #FFF2E7;
+                        color: #FF9138;  
+                        box-shadow: rgba(244, 128, 34, 0.5) 0px 0px 20px;    
+
+                    }
+                }
+            }
+            // End content__update-bottom
+        }
+        // End taiKhoan__content-update
+    }
+    // End taiKhoan__content
+
+    // Start taiKhoan__addTaiKhoan 
+    .taiKhoan__addTaiKhoan {
+        position: absolute;
+        right: 0;
+        top: 247px;
+        width: 80px;
+        height: 94px;
+        background-color: #fff2e7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: $box-shadow;
+        cursor: pointer;
+        padding: 10px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            color: $primary-color-txt;
+            line-height: 19.1px;
+            text-align: center;
+            margin-top: 6.33px;
+            width: 69px;
+            white-space: normal;
+        }
+    }
+    // End taiKhoan__addTaiKhoan 
+}
+// End taiKhoan

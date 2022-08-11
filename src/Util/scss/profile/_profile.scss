@@ -1,0 +1,96 @@
+// Start profile
+.profile {
+    padding: 29px 24px;
+
+    .profile__heading {
+        color: $primary-color-txt;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    //Start profile__content
+    .profile__content {
+        width: 1112px;
+        height: 397px;
+        background-color: #fff;
+        border-radius: 12px;
+        margin-top: 168px;
+        padding: 40px 24px;
+        box-shadow: 5px 5px rgba(0,0,0,0.1);
+        display: flex;
+
+        //Start profile__content-left
+        .profile__content-left {
+            width: 248px;
+
+            .content__left-img {
+                width: 248px;
+                height: 248px;
+                border-radius: 50%;
+                background-size: cover;
+                position: relative;
+
+                .content__left-img-camera {
+                    position: absolute;
+                    bottom: 0;
+                    right: 32px;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    border: 2.25px solid #fff;
+                    background-color: #FF7506;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .content__left-txt {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                margin-top: 19px;
+                text-align: center;
+            }
+        }
+        //End profile__content-left
+
+        //Start profile__content-right
+        .profile__content-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: calc(1112px - 248px);
+            padding: 0 24px;
+            grid-gap: 24px;
+
+            // Start profile__content-item
+            .profile__content-item {
+                height: 76px;
+
+                //Start profile__content-title
+                .profile__content-title {
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+                //End profile__content-title
+
+                // Start profile__content-input 
+                .profile__content-input {
+                    width: 384px;
+                    height: 44px;
+                    padding: 10px 16px;
+                    border-radius: 6px;
+                    border: none;
+                    background-color: #EAEAEC !important;
+                    color: #535261;
+                    opacity: 50%;
+                }
+                //End profile__content-input
+            }
+            // End profile__content-item
+        }
+        //End profile__content-right
+    }
+    //End profile__content
+}
+// End profile

@@ -1,0 +1,413 @@
+//Start dashboard
+.dashboard {
+    width: 100%;
+    height: 100%;
+
+
+    //Start dashboard__content
+    .dashboard__content {
+        display: flex;
+
+        // Start dashboard__content-left
+        .dashboard__content-left {
+            width: calc(1440px - 200px - 401px);
+            padding: 30px 24px 30px 24px;
+
+            //Start dashboard__heading
+            .dashboard__heading {
+                font-size: 20px;
+                font-weight: 700;
+                color: #FF9138;
+            }
+            //End dashboard__heading
+
+            .content__heading {
+                margin-top: 50px;   
+                font-size: 24px;
+                font-weight: 700;
+                color: $primary-color-txt;
+                margin-bottom: 20px;
+            }
+    
+            // Start content__list
+            .content__list {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 13px;
+    
+                //Start content__item
+                .content__item {
+                    width: 186px;
+                    height: 120px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+                    padding: 7px 12px;
+
+                    // Start content__item-top
+                    .content__item-top {
+                        width: 100%;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 12px;
+
+                        img {
+                            margin-right: 12px;
+                        }
+
+                        p {
+                            width: 75px;
+                            font-size: 14px;
+                            font-weight: 700;
+                            margin-bottom: 0;
+                            line-height: 18px;
+                        }
+                    }
+                    // End content__item-top
+
+                    // Start content__item-bottom
+                    .content__item-bottom {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .content__item-number {
+                            font-size: 30px;
+                            line-height: 45px;
+                            font-weight: 700;
+                            margin-bottom: 0;
+                        }
+
+                        .content__item-growth {
+                            width: 48px;
+                            height: 14.98px;
+                            border-radius: 7.2px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            padding: 2px 5px;
+
+                            span {
+                                font-size: 8px;
+                            }
+
+                            &.increment {
+                                background-color: $primary-color-btn-hover;
+                                color: $primary-color-txt; 
+                            }
+
+                            &.decrement {
+                                background-color: rgba(231, 63, 63, 0.15);
+                                color: #E73F3F;
+                            }
+                        }
+                    }
+                    // End content__item-bottom
+                }
+                //End content__item
+            }
+            // End content__list
+
+
+            // Star content__chart
+            .content__chart {
+                height: 484px;
+                background-color: #fff;
+                padding: 24px;
+                margin-top: 16px;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+                position: relative;
+
+                // Start content__chart-top
+                .content__chart-top {
+
+                    // Start content__chart-heading 
+                    .content__chart-heading {
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        margin-bottom: 0;
+                    }
+                    // End content__chart-heading
+
+                    // Start content__chart-date
+                    .content__chart-date {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #A9A9B0;
+                        line-height: 21px;
+                    }
+                    // End content__chart-date
+                }
+                // End content__chart-top
+
+                // Start content__chart-bottom
+                .content__chart-bottom {
+                    margin-top: 20px;
+
+                    .tooltip-chart {
+                        background-color: #5185f7 !important;
+                        color: #fff !important;
+                        border-radius: 8px !important;
+                    }
+                }
+                // End content__chart-bottom
+
+                // Start content__chart-select
+                .content__chart-select {
+                    position: absolute;
+                    top: 24px;
+                    right: 24px;
+                    display: flex;
+                    align-items: center;
+
+                    .content__chart-text {
+                        font-weight: bold;
+                        line-height: 24px;
+                        margin-right: 8px;
+                    }
+
+                    .ant-select {
+                        width: 106px !important;
+
+                        .ant-select-selector {
+                            border-radius: 8px !important;
+                        }
+
+                        &.ant-select-focused {
+                            border-color: $primary-color-txt !important;
+                        }
+
+                        .ant-select-arrow {
+                            color: $primary-color-btn;
+                        }
+                    }
+                }
+                // End content__chart-select
+            }
+            // End content__chart
+        }   
+        // End dashboard__content-left
+
+        // Start dashboard__content-right
+        .dashboard__content-right {
+            width: 401px;
+            height: 100vh;
+            background-color: #fff;
+            padding: 24px;
+
+            .content__right-heading {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                color: $primary-color-txt;
+                margin-top: 80px;
+            }
+
+            // Start content__right-list
+            .content__right-list {
+
+                // Start content__right-item
+                .content__right-item {
+                    width: 353px;
+                    height: 83px;
+                    box-shadow: rgba(0,0,0,0.1) 0px 0px 10px;;
+                    margin-bottom: 12px;
+                    border-radius: 12px;
+                    padding: 11px 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    // Start item__left
+                    .item__left {
+                        display: flex;
+                        align-items: center;
+
+                        .item__number {
+                            margin-left: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            p {
+                                margin-bottom: 0;
+                                font-size: 24px;
+                                line-height: 36px;
+                                font-weight: 800;
+                            }
+
+                            .item__text {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 0;
+
+                                span {
+                                    line-height: 21px;
+                                    font-size: 14px;
+                                    margin-left: 4.8px;
+                                }
+                            }
+                        }
+                    }
+                    // End item__left
+
+                    // Start item__right
+                    .item__right {
+                        width: 153px;
+
+                        // Start item__right-list
+                        .item__right-list {
+
+                            // Start item__right-item
+                            .item__right-item {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                // Start item__right-status 
+                                .item__right-status {
+                                    margin-right: 12px;
+
+                                    span {
+                                        margin-left: 4px;
+                                        font-size: 12px;
+                                        line-height: 21px;
+                                        font-weight: 400;
+                                        color: #7E7D88;
+                                    }
+                                }
+                                // End item__right-status
+                                
+                                // Start item__right-number 
+                                .item__right-number {
+                                    width: 38px;
+                                    display: flex;
+                                    align-items: center;
+
+                                    span {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        font-weight: 700;
+                                        transform: translateY(10%);
+                                    }
+                                }
+                                // End item__right-number
+
+                            }
+                            // End item__right-item
+                        }
+                        // End item__right-list
+                    }
+                    // End item__right
+                }
+                // End content__right-item
+            }
+            // End content__right-list
+
+            // Start content__right-calendar
+            .content__right-calendar {
+                width: 353px;
+                height: 336px;
+                background-color: #fff;
+                border-radius: 12px;
+                box-shadow: rgba(0,0,0,0.1) 0px 0px 10px;
+                padding: 16px 29.5px;                
+
+                // Start react-calendar
+                .react-calendar {
+                    width: 294px !important;
+                    height: 304px !important;
+                    border: none !important;
+
+                    // Start react-calendar__month-view__weekdays__weekday
+                    .react-calendar__month-view__weekdays__weekday {
+                        font-size: 14px !important;
+                        font-weight: 700px !important;
+                        color: $primary-color-txt !important;
+                        text-transform: none !important;
+                    }
+                    // End react-calendar__month-view__weekdays__weekday
+
+                    // Start react-calendar__month-view__days__day
+                    .react-calendar__month-view__days__day {
+
+                        abbr {
+                            font-size: 14px;
+                            color: #535261;
+                            font-weight: 700;
+                        }
+
+                        &.react-calendar__month-view__days__day--neighboringMonth {
+
+                            abbr {
+                                color: #7E7D88;
+                                font-weight: 600;
+                            }
+                        }
+                        
+                        &.react-calendar__tile--active {
+                            background-color: $primary-color-btn !important;
+
+                            abbr {
+                                color: #fff !important;
+                            }
+                        }
+
+                    }
+                    // End react-calendar__month-view__days__day
+
+                    // Start react-calendar__navigation
+                    .react-calendar__navigation {
+                        color: $primary-color-txt;
+                        margin-bottom: 16px;
+
+                        .react-calendar__navigation__prev2-button {
+                            display: none !important;
+                        }
+
+                        .react-calendar__navigation__next2-button {
+                            display: none !important;
+                        }
+
+                        .react-calendar__navigation__arrow {
+                            font-size: 40px;
+                            height: 40px;
+                            width: 40px;
+                        }
+
+                        .react-calendar__navigation__label {
+                            font-weight: 700;
+                        }
+                    }
+                    // End react-calendar__navigation
+
+                }
+                //  End react-calendar
+            }
+            // End content__right-calendar
+        }
+        // End dashboard__content-right
+    }
+    //End dashboard__content
+}
+//End dashboard
+
+
+//Start Color text
+.thietbi {
+    color: $primary-color-txt;
+}
+
+.dichvu {
+    color: #4277FF;
+}
+
+.capso {
+    color: #35C75A; 
+}
+//End color text
+
