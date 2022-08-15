@@ -34,7 +34,7 @@ export const Login = () => {
 
     useEffect(()=> {
         if(statusLogin === true) {
-            // navigate(-1);
+            
             window.location.replace('/dashboard');
         }else {
             return;
@@ -44,18 +44,25 @@ export const Login = () => {
 
     const onFinish = (e: EventTypes) => {
         console.log('Success:', e);
-        // if(e.username === 'lequynhaivan01' && e.password === '123456') {
-        //     window.location.replace('/');
-        // }else {
-        //     alert('Tài khoản mật khẩu chưa đúng! mời bạn nhập lại');
-        // }
-        DangNhap(e.username, e.password);
-        Swal.fire({
-            icon: 'success',
-            title: 'Đăng nhập thành công!',
-            showConfirmButton: false,
-            timer: 1500
-        })
+        if(e.username === 'thanh' && e.password === '123') {
+            DangNhap(e.username, e.password);
+            Swal.fire({
+                icon: 'success',
+                title: 'Đăng nhập thành công!',
+                showConfirmButton: false,
+                timer: 2000
+            })
+        }else {
+            alert('Tài khoản mật khẩu chưa đúng! mời bạn nhập lại');
+            DangNhap(e.username, e.password);
+            Swal.fire({
+                icon: 'error',
+                title: 'Đăng nhập thất bại!',
+                showConfirmButton: false,
+                timer: 1000
+            })
+        }
+     
     };
 
 

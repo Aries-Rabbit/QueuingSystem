@@ -24,7 +24,7 @@ export const Home = () => {
     
     const [imageProfile, setImageProfile] = useState<string>('./img/user.png');
 
-    const [statusNotify, setStatusNotify] = useState<boolean>(false); //false là đóng, true là mở
+    const [statusNotify, setStatusNotify] = useState<boolean>(false); 
 
     const [bgNotify, setBgNotify] = useState<string>('#FFF2E7'); 
 
@@ -108,9 +108,6 @@ export const Home = () => {
                     </Menu.Item>
                     <Menu.Item key="3" icon={<img src='./img/dichvu.png'/>}>
                         <Link to='dichvu'>Dịch vụ</Link>
-                    </Menu.Item>
-                    <Menu.Item key="4" icon={<img src='./img/capso.png'/>}>
-                        <Link to='capso'>Cấp số</Link>
                     </Menu.Item>
                     <Menu.Item key="5" icon={<img src='./img/baocao.png'/>}>
                         <Link to='baocao'>Báo cáo</Link>

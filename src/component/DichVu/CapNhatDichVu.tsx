@@ -96,7 +96,7 @@ export const CapNhatDichVu = () => {
       )
     }
 
-    // Checkbox
+    // checkbox
     function onChange(e:any) {
       console.log(`checked = ${e.target.checked}`);
     }

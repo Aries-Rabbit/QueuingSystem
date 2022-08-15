@@ -37,7 +37,7 @@ export const ConfirmEmail = () => {
     const [form] = Form.useForm();
 
     const onFinish = (event: any) => {
-        // console.log('Success:', values);
+  
         console.log(event.email);
         const email = event.email;
         KiemTraEmail(email);

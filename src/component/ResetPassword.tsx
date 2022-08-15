@@ -59,10 +59,10 @@ export const ResetPassword = () => {
             initialValues,
             enableReinitialize: true,
             onSubmit: () => {
-                // console.log(JSON.stringify(values));
+                
                 const updateDichVu = async () => {
                     const dichVuRef = doc(db, "taiKhoan", `${id}`);
-                    // Set the "capital" field of the city 'DC'
+                    
                     await updateDoc(dichVuRef, {
                       nhapLaiMatKhau: `${formik.values.nhapLaiMatKhau}`,
                       matKhau: `${formik.values.matKhau}`,
@@ -82,41 +82,6 @@ export const ResetPassword = () => {
                     <div className='reset__left-logo'>
                         <img src={Image.logo} className='reset__left-img'/>
                     </div>
-                    {/* <Form
-                        name="basic"
-                        labelCol={{ span: 8 }}
-                        wrapperCol={{ span: 16 }}
-                        initialValues={{ remember: true }}
-                        onFinish={onFinish}
-                        autoComplete="off"
-                        className='reset__left-form'
-                        form={form}
-                        >
-                            <h3 style={{textAlign: 'center', fontWeight: '600'}}>Đặt lại mật khẩu mới</h3>
-
-                        <Form.Item
-                            label=""
-                            rules={[{ required: true, message: 'Vui lòng nhập mật khẩu!' }]}
-                        >
-                            <p>Mật khẩu *</p>
-                            <Form.Item name="matKhau"noStyle><Input.Password className='reset__left-input'/></Form.Item>
-                        </Form.Item>
-
-                        <Form.Item
-                            label=""
-                            rules={[{ required: true, message: 'Vui lòng nhập lại mật khẩu!' }]}
-
-                        >
-                            <p>Nhập lại mật khẩu *</p>
-                            <Form.Item name="nhapLaiMatKhau"noStyle><Input.Password className='reset__left-input'/></Form.Item>
-                        </Form.Item>
-
-                        <Form.Item wrapperCol={{ offset: 8, span: 16 }} name="button" className="reset__left-form-control">
-                            <Button type="primary" htmlType="submit" className='reset__left-btn'>
-                                <span style={{fontWeight: '500'}}>Xác nhận</span>
-                            </Button>
-                        </Form.Item>
-                    </Form> */}
                     <h3 className='reset__left-heading'>Đặt lại mật khẩu mới</h3>
                     <form className='reset__left-form' onSubmit={formik.handleSubmit}>
                         <div className='reset__left-item'>
