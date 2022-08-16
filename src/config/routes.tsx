@@ -7,10 +7,7 @@ import { DanhSachVaiTro } from '../component/CaiDatHeThong/VaiTro/DanhSachVaiTro
 import { NhatKyNguoiDung } from '../component/CaiDatHeThong/NguoiDung/NhatKyNguoiDung';
 import { QuanLyTaiKhoan } from '../component/CaiDatHeThong/TaiKhoan/QuanLyTaiKhoan';
 import { QuanLyVaiTro } from '../component/CaiDatHeThong/VaiTro/QuanLyVaiTro';
-import { Capso } from '../component/CapSo/Capso';
-import { ChiTietCapSo } from '../component/CapSo/ChiTietCapSo';
-import { DanhSachCapSo } from '../component/CapSo/DanhSachCapSo';
-import { ThemCapSo } from '../component/CapSo/ThemCapSo';
+
 import { ConfirmEmail } from '../component/ConfirmEmail';
 import { Dashboard } from '../component/Dashboard/Dashboard';
 import { DashboardDate } from '../component/Dashboard/DashboardDate';
@@ -60,12 +57,7 @@ const MainRoutes = () => {
               <Route path='chiTietDichVu/:id' element={<ChiTietDichVu/>}/>  
               <Route path='capNhatDichVu/:id' element={<CapNhatDichVu/>}/>  
               <Route path='themDichVu' element={<ThemDichVu/>}/>  
-            </Route>           
-            <Route path='capso' element={<Capso/>}>
-              <Route index element={<DanhSachCapSo/>}/>
-              <Route path='chiTietCapSo/:id' element={<ChiTietCapSo/>}/>
-              <Route path='themCapSo' element={<ThemCapSo/>}/>
-            </Route>           
+            </Route>                     
             <Route path='baocao' element={<BaoCao/>}>
               <Route index element={<LapBaoCao/>}/>  
             </Route>
