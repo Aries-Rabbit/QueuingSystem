@@ -37,7 +37,7 @@ export const ConfirmEmail = () => {
     const [form] = Form.useForm();
 
     const onFinish = (event: any) => {
-  
+        // console.log('Success:', values);
         console.log(event.email);
         const email = event.email;
         KiemTraEmail(email);
@@ -77,7 +77,6 @@ export const ConfirmEmail = () => {
                             name="email"
                             rules={[{ required: true, message: 'Vui lòng nhập email!' }]}
                         >
-                            {/* <Form.Item name="email"noStyle><Input className='confirmPassword__left-input'/></Form.Item> */}
                             <Input className='confirmPassword__left-input'/>
                         </Form.Item>
 

@@ -150,7 +150,6 @@ export const DanhSachVaiTro = () => {
                         dataSource={vaiTro}
                         columns={columns}
                         size="small"
-                        // pagination={{ pageSize: 6, itemRender:itemRender }}
                         pagination={false}
                         bordered
                     >

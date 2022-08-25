@@ -11,7 +11,7 @@ import { bindActionCreators } from 'redux';
 import dichVuReducer from '../../Redux/Reducer/dichVuReducer';
 import { dichVuCreator, State } from '../../Redux';
 import { useSelector } from 'react-redux';
-
+// import * as Data from '../../data/dichVuData.json';
 
   const { Option } = Select;
   
@@ -34,7 +34,7 @@ export const DanhSachDichVu = () => {
 
     const {LoadDuLieu} = bindActionCreators(dichVuCreator, dispatch);
 
-   
+    //Lấy dữ liệu từ reducer
     useEffect(()=> {
         LoadDuLieu();
     }, []);
@@ -138,7 +138,7 @@ export const DanhSachDichVu = () => {
       }
 
     const disabledStartDate = (startValue:any) => {
-  
+        // const day = (current:any) => current.isBefore(moment().subtract(1,"day"));
         if (!startValue || !endValue) {
           return false;
         }

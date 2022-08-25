@@ -118,11 +118,7 @@ export const DashboardDate = () => {
             return { fill: 'l(270) 0:#ffffff 0.5:#7ec2f3 1:#5185F7' };
         },
         tooltip: {
-            // container: `<div style={{backgroundColor: 'red'}}>fdafafas  </div>`,
-            // fomatter: (datum: Datum) => {
-            //     return {name: datum.x, value: datum.y};
-            // }
-            // style="background-color: red; width: 100%, height: 100%"
+    
             customContent: (name:any, data:any) =>
                 `<div>${data?.map((item:any) => {
                 return `<div className="tooltip-chart">

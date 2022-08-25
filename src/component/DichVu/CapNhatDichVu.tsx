@@ -96,7 +96,7 @@ export const CapNhatDichVu = () => {
       )
     }
 
-    // checkbox
+    // Checkbox
     function onChange(e:any) {
       console.log(`checked = ${e.target.checked}`);
     }
@@ -124,7 +124,6 @@ export const CapNhatDichVu = () => {
 
         const updateDichVu = async () => {
             const dichVuRef = doc(db, "dichVu", `${id}`);
-            // Set the "capital" field of the city 'DC'
             await updateDoc(dichVuRef, {
               maDichVu: `${values.maDichVu}`,
               moTa: `${values.moTa}`,

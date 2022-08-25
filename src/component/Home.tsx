@@ -24,7 +24,7 @@ export const Home = () => {
     
     const [imageProfile, setImageProfile] = useState<string>('./img/user.png');
 
-    const [statusNotify, setStatusNotify] = useState<boolean>(false); 
+    const [statusNotify, setStatusNotify] = useState<boolean>(false); //false là đóng, true là mở
 
     const [bgNotify, setBgNotify] = useState<string>('#FFF2E7'); 
 
@@ -109,6 +109,9 @@ export const Home = () => {
                     <Menu.Item key="3" icon={<img src='./img/dichvu.png'/>}>
                         <Link to='dichvu'>Dịch vụ</Link>
                     </Menu.Item>
+                    <Menu.Item key="4" icon={<img src='./img/capso.png'/>}>
+                        <Link to='capso'>Cấp số</Link>
+                    </Menu.Item>
                     <Menu.Item key="5" icon={<img src='./img/baocao.png'/>}>
                         <Link to='baocao'>Báo cáo</Link>
                     </Menu.Item>
@@ -170,54 +173,7 @@ export const Home = () => {
                         <div className='profile__notify-content'>
                             <ul className='profile__notify-list'>
                                 {renderNotifyContent()}
-                                {/* <li className="profile__notify-item">
-                                    <div>
-                                        <span>Người dùng: Nguyễn Thị Thùy Dung</span>
-                                        <p>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                    </div>
-                                </li>
-                                <li className="profile__notify-item">
-                                    <div>
-                                        <span>Người dùng: Nguyễn Thiên Chinh</span>
-                                        <p>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                    </div>
-                                </li>
-                                <li className="profile__notify-item">
-                                    <div>
-                                        <span>Người dùng: Võ Thị Kim Liên</span>
-                                        <p>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                    </div>
-                                </li>
-                                <li className="profile__notify-item">
-                                    <div>
-                                        <span>Người dùng: Hoàng Nguyễn Quốc Huy</span>
-                                        <p>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                    </div>
-                                </li>
-                                <li className="profile__notify-item">
-                                    <div>
-                                        <span>Người dùng: Võ Ngọc Lan Anh</span>
-                                        <p>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                    </div>
-                                </li>
-                                <li className="profile__notify-item">
-                                    <div>
-                                        <span>Người dùng: Nguyễn Thị Trúc Anh</span>
-                                        <p>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                    </div>
-                                </li>
-                                <li className="profile__notify-item">
-                                    <div>
-                                        <span>Người dùng: Nguyễn Trung Toàn</span>
-                                        <p>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                    </div>
-                                </li>
-                                <li className="profile__notify-item">
-                                    <div>
-                                        <span>Người dùng: Phạm Hồng Ngọc</span>
-                                        <p>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                    </div>
-                                </li> */}
+            
                             </ul>  
                         </div>  
                     </div>

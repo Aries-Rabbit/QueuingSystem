@@ -24,7 +24,7 @@ export const ResetPassword = () => {
         console.log('Success:', event);
         const updateDichVu = async () => {
             const dichVuRef = doc(db, "taiKhoan", `${id}`);
-            // Set the "capital" field of the city 'DC'
+         
             await updateDoc(dichVuRef, {
               nhapLaiMatKhau: `${event.nhapLaiMatKhau}`,
               matKhau: `${event.matKhau}`,
@@ -59,10 +59,8 @@ export const ResetPassword = () => {
             initialValues,
             enableReinitialize: true,
             onSubmit: () => {
-                
                 const updateDichVu = async () => {
                     const dichVuRef = doc(db, "taiKhoan", `${id}`);
-                    
                     await updateDoc(dichVuRef, {
                       nhapLaiMatKhau: `${formik.values.nhapLaiMatKhau}`,
                       matKhau: `${formik.values.matKhau}`,
@@ -82,6 +80,7 @@ export const ResetPassword = () => {
                     <div className='reset__left-logo'>
                         <img src={Image.logo} className='reset__left-img'/>
                     </div>
+            
                     <h3 className='reset__left-heading'>Đặt lại mật khẩu mới</h3>
                     <form className='reset__left-form' onSubmit={formik.handleSubmit}>
                         <div className='reset__left-item'>

@@ -192,7 +192,6 @@ export const DanhSachTaiKhoan = () => {
                 <span>Từ khóa</span>
                 <Input
                     placeholder="Nhập từ khóa"
-                    // allowClear
                     onChange={onChange}
                     style={{ width: 304 }}
                     suffix={<img src={`${Image.search}`} 

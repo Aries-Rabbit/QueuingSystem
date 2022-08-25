@@ -94,7 +94,6 @@ export const CapNhattaiKhoan = (props:any) => {
         initialValues,
         enableReinitialize: true,
         onSubmit: (values:any) => {
-            // console.log(JSON.stringify(values));
             console.log('Đây là giá trị',values);
             const update = async () => {
                 console.log(id);

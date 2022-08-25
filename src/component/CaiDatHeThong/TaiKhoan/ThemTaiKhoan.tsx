@@ -121,14 +121,7 @@ const handleChangeSelectTrangThaiHoatDong = (e:any) => {
         )
   }
 
-//   const addDocument = async () => {
-//     // Add a new document with a generated id.
-//     const docRef = await addDoc(collection(db, "taiKhoan"), {
-//         name: "Tokyo",
-//         country: "Japan"
-//     });
-//     console.log("Document written with ID: ", docRef.id);
-//   }
+
   return (
     <div>
         <div className='taiKhoan__breadcrumb'>
@@ -241,7 +234,6 @@ const handleChangeSelectTrangThaiHoatDong = (e:any) => {
                         navigate('/qlTaiKhoan');
                     }}>Hủy bỏ</button>
                     <button type='submit' className='content__update-btn-update'  onClick={()=> {
-                            // addDocument()
                     }}>Thêm</button>
                 </div>
             </form>  

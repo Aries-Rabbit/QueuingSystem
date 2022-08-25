@@ -312,7 +312,6 @@ export const ChiTietDichVu = () => {
       }
 
     const disabledStartDate = (startValue:any) => {
-        // const day = (current:any) => current.isBefore(moment().subtract(1,"day"));
         if (!startValue || !endValue) {
           return false;
         }
